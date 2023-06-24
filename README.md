@@ -6,7 +6,7 @@ Developer and Student
 
 I'm currently studying Software Development at SETU, and in my spare time outside college, I work on full-stack apps and websites.
 
-* 🌍  I'm based in Waterford, Ireland
+* 🌍  I'm based in Ireland
 * 🧠  I'm learning JavaScript and Webpack
 
 ### Skills
