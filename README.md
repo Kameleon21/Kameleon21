@@ -4,10 +4,10 @@ Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-912
 Developer and Student
 ---------------------
 
-I'm currently studying Software Development at SETU, and in my spare time outside college, I work on full-stack apps and websites.
+I'm currently working as a Software Engineer, and in my spare time outside work, I work on full-stack apps and websites.
 
 * 🌍  I'm based in Ireland
-* 🧠  I'm currently learning React and Webpack
+* 🧠  I'm currently learning Next.js
 
 ### Skills
 
