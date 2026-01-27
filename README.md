@@ -23,4 +23,7 @@ I'm currently working as a Software Engineer, and in my spare time outside work,
 
 ### Socials
 
-<p align="left"> <a href="https://www.linkedin.com/in/kamil-rogozinski/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /></a></p>
+<p align="left"> 
+  <a href="https://www.linkedin.com/in/kamil-rogozinski/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /></a>
+  <a href="https://x.com/KamilRogozinski" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/twitter.svg" width="32" height="32" /></a>
+</p>
