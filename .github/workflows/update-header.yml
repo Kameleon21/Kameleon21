@@ -1,0 +1,42 @@
+name: Update Profile Header
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Daily at midnight UTC
+  workflow_dispatch:  # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update-header:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Both are rendered daily so the README can switch between them at any time.
+      - uses: Kameleon21/gh-kameleon@main
+        with:
+          output: kameleon.svg
+
+      - uses: Kameleon21/gh-terminal-fetch@main
+        with:
+          output: terminal.svg
+          host: dublin
+          role: Software Engineer @ Citi
+          location: Dublin, Ireland
+          stack: Java, Go, TypeScript
+          building: oku, tokenlens, tmux-claude
+          command: oku fetch kameleon21
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add kameleon.svg terminal.svg
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update profile header"
+            git push
+          fi
