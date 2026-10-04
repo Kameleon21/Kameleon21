@@ -6,4 +6,6 @@
   <a href="https://www.linkedin.com/in/kamil-rogozinski/">LinkedIn</a>
 </p>
 
-<img align="center" width="100%" src="game.gif" />
+<img align="center" width="100%" src="kameleon.svg" />
+
+<!-- To switch to the terminal header, use src="terminal.svg" above. Both are refreshed daily. -->
