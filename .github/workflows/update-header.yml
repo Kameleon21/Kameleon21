@@ -29,11 +29,17 @@ jobs:
           building: oku, tokenlens, tmux-claude
           command: oku fetch kameleon21
 
+      - uses: czl9707/gh-space-shooter@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          output-path: space-shooter.gif
+          no-commit: true # committed below with the other images
+
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add kameleon.svg terminal.svg
+          git add kameleon.svg terminal.svg space-shooter.gif
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
