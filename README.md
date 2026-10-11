@@ -27,7 +27,13 @@ drwxr-xr-x  <a href="https://github.com/Kameleon21/bide">bide/</a>         go   
 ### 📖 On the nightstand
 
 <!-- oku:start -->
-_Between books right now. Recommendations welcome._
+<img align="left" width="64" src="https://assets.hardcover.app/external_data/41549656/aa8022ec54a9cd5440302f413ed9deb3b401e318.jpeg" alt="">
+
+**[Jane Eyre](https://hardcover.app/books/jane-eyre)**<br>
+Charlotte Brontë<br>
+`░░░░░░░░░░░░░░░░░░░░` 0% · p. 0 of 555
+
+<br clear="left">
 <!-- oku:end -->
 
 <sub>Synced from Hardcover every morning by <a href="https://github.com/Kameleon21/oku">oku</a>.</sub>
