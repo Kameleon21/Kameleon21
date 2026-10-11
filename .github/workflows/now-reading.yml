@@ -1,0 +1,35 @@
+name: Update currently reading
+
+on:
+  schedule:
+    - cron: "30 6 * * *" # Daily, 06:30 UTC
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.25"
+
+      - uses: oven-sh/setup-bun@v2
+
+      - name: Fetch currently reading
+        env:
+          HARDCOVER_TOKEN: ${{ secrets.HARDCOVER_TOKEN }}
+        run: |
+          go install github.com/Kameleon21/oku/cmd/oku@latest
+          oku sync
+          oku reading --json > reading.json
+
+      - run: bun scripts/now-reading.ts < reading.json
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update currently reading
+          file_pattern: README.md
